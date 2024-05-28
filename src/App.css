@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+header {
+  padding: 1rem;
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.main-content {
+  padding: 1rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.language-tab {
+  width: 100%;
+  /* background-color: green; */
+  padding: 1rem;
+}
+
+.language-tab textarea {
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  width: 100%;
+  /* max-width: 400px; */
+  height: 400px;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+.translate-btn {
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.translate-btn:hover {
+  background-color: rgb(3, 127, 252);
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 840px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  footer {
+    position: sticky;
+  }
+}
