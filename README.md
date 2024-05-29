@@ -8,6 +8,7 @@ A web-application which can instantly translate almost all major languages spoke
 
 **On Large screen (Desktop)**
 ![image](.\src\assets\desktop.png)
+![image](./src/assets/desktop.png)
 
 **On Small screem (Smartphone)**
 ![image](.\src\assets\mobile.png)
