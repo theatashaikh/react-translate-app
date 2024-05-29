@@ -6,6 +6,7 @@ import TargetLanguageTab from "./Components/TargetLanguageTab";
 import LanguageSelectionTab from "./Components/LanguageSelectionTab/LanguageSelectionTab";
 import MainContext from "./MainContext";
 import Footer from "./Components/Footer";
+import Modal from "./Components/Modal";
 
 function App() {
   let [srcLang, setSrcLang] = useState("en");
@@ -13,6 +14,13 @@ function App() {
   let [srcLangText, setSrcLangText] = useState("");
   let [targetLangText, setTargetLangText] = useState("");
   let [isTranslating, setIsTranslating] = useState(false);
+  let [isModalOpen, setIsModalOpen] = useState(false);
+
+  let [history, setHistory] = useState(
+    localStorage.getItem("myapphistory")
+      ? JSON.parse(localStorage.getItem("myapphistory"))
+      : []
+  );
   return (
     <MainContext.Provider
       value={{
@@ -26,6 +34,10 @@ function App() {
         setTargetLangText,
         isTranslating,
         setIsTranslating,
+        isModalOpen,
+        setIsModalOpen,
+        history,
+        setHistory,
       }}
     >
       <Header />
@@ -33,6 +45,7 @@ function App() {
       <div className="main-content">
         <SourceLanguageTab />
         <TargetLanguageTab />
+        <Modal />
       </div>
       <Footer />
     </MainContext.Provider>

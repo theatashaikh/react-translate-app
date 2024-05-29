@@ -18,12 +18,9 @@ function LanguageSelectionTab() {
         >
           <LanguageSelector />
         </select>
-        <img
-          src="src\assets\right-arrow.png"
-          alt="right arrow"
-          width="20"
-          style={{ marginRight: "1rem", marginLeft: "1rem" }}
-        />
+        <h2 style={{ color: "#fff", display: "inline", margin: "1rem" }}>
+          <i class="fa-solid fa-arrow-right"></i>
+        </h2>
         <select
           value={targetLang}
           onChange={(e) => setTargetLang(e.target.value)}

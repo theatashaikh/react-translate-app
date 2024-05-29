@@ -10,6 +10,8 @@ function SourceLanguageTab() {
     setSrcLangText,
     setTargetLangText,
     setIsTranslating,
+    history,
+    setHistory,
   } = useContext(MainContext);
 
   function handleChange(e) {
@@ -30,6 +32,13 @@ function SourceLanguageTab() {
     let translation = translationObj.responseData.translatedText;
 
     setTargetLangText(translation);
+
+    setHistory((prev) => [
+      ...prev,
+      { srcLangText, translation, srcLang, targetLang },
+    ]);
+
+    localStorage.setItem("myapphistory", JSON.stringify(history));
     setIsTranslating(false);
   }
 
