@@ -1,16 +1,12 @@
 # React Translate App
 
-A web-application which can instantly translate almost all major languages spoken across the globe created using modern web development technologies such as react.
-
-## **Guys! the app is reponsive, look's great on mobile devices:)**
+A responive web-application which can instantly translate almost all major languages spoken across the globe created using modern web development technologies such as react.
 
 <center>
 
-**On Large screen (Desktop)**
-![image](./src/assets/desktop.png)
+**Preview of the App**
 
-**On Small screem (Smartphone)**
-![image](./src/assets/mobile.png)
+![Video](./src/assets/ReactTranslateApp.gif)
 
 </center>
 
