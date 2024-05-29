@@ -11,9 +11,13 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: #222;
+}
+
 header {
   padding: 1rem;
-  background-color: dodgerblue;
+  background-color: #111;
   color: #fff;
 }
 
@@ -34,7 +38,8 @@ header {
 .language-tab textarea {
   border: none;
   border-radius: 4px;
-  background-color: #f2f2f2;
+  background-color: #333;
+  color: #fff;
   width: 100%;
   /* max-width: 400px; */
   height: 400px;
@@ -44,7 +49,7 @@ header {
 }
 
 .translate-btn {
-  background-color: dodgerblue;
+  background-color: #111;
   color: #fff;
   border: none;
   outline: none;
@@ -55,12 +60,12 @@ header {
   font-size: 1.2rem;
 }
 .translate-btn:hover {
-  background-color: rgb(3, 127, 252);
+  background-color: #222;
 }
 
 footer {
   text-align: center;
-  background-color: #333;
+  background-color: #111;
   color: #fff;
   padding: 1rem;
   position: fixed;
